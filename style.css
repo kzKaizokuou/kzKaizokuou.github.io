@@ -39,7 +39,6 @@ align-items: center;
 .encabezado{
 background: linear-gradient(var(--background-nav), var(--background-footer));
 display: flex;
-align-items: cover;
 flex-wrap: wrap;
 justify-content: center;
 box-shadow: 0 5px 5px rgba(0,0,0,0.3);
