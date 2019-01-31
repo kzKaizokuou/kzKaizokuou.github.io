@@ -160,21 +160,19 @@ footer p{
 }
 @media only screen and (max-width: 500px){
     .grid a{
-        height: 150px;  
-        width: 150px;
+        height: 130px;  
+        width: 130px;
     }
 
     .profile{
-        height: 80px;  
-        width: 80px;
+        height: 70px;  
+        width: 70px;
     }
     .grid div{
         width: 0;
     }
     body h1{
-    
         font-size: 10px;
-    
     }
 
 }
