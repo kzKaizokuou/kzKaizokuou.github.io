@@ -171,6 +171,10 @@ footer p{
     .grid div{
         width: 0;
     }
+header div{
+    size: 50px;
+}
+
 }
 
 .hide{
