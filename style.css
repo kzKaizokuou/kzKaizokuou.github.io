@@ -40,7 +40,7 @@ align-items: center;
 background: linear-gradient(var(--background-nav), var(--background-footer));
 display: flex;
 align-items: cover;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
 justify-content: center;
 box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 border-radius: 0px 0px 10px 10px;
@@ -171,9 +171,7 @@ footer p{
     .grid div{
         width: 0;
     }
-header div{
-    size: 50px;
-}
+
 
 }
 
