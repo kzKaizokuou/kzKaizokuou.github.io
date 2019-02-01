@@ -1,181 +1,347 @@
 /* Variables*/
 
 :root{
- --background-nav: #004d80;
- --background-footer: black;
- --text-color:#009ae4;
-}
-
-/*-------------------------------*/
-
-html{
-    height:100%;
-    background-color: black;
+    --background-nav: #004d80;
+    --background-footer: black;
+    --text-color:#009ae4;
+    --responsive-color: #d9d9d9;
+   }
    
-}
-body{
-	min-height: 100%;
-	box-sizing: border-box;
-	 display:flex;
-	 flex-direction: column;
-	align-content:space-between;
-}
-
-body h1{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--text-color);
-}
-
-
-.encabezado nav{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-
-}
-.encabezado{
-background: linear-gradient(var(--background-nav), var(--background-footer));
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-box-shadow: 0 5px 5px rgba(0,0,0,0.3);
-border-radius: 0px 0px 10px 10px;
-
-}
-
-.profile{
-height: 100px;  
-width: 100px;
-background-repeat:no-repeat;
-background-size: cover;
-background-position:center;
-border-radius: 180px;
-
-
-}
-
-.homeButton{
-    display: flex;
-    height: 80%;
-    width: 100px;
-    margin: 0px 5px 0px 25px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(var(--background-nav), var(--background-footer));
-    border-radius: 5px;
-}
-.aboutButton{
-    display: flex;
-    height: 80%;
-    width: 100px;
-    margin: 0px 5px 0px 5px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(var(--background-nav), var(--background-footer));
-    border-radius: 5px;
-}
-
-.cvButton{
-    display: flex;
-    height: 80%;
-    width: 100px;
-    margin: 0px 5px 0px 5px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(var(--background-nav), var(--background-footer));
-    border-radius: 5px;
-}
-
-
-nav div:hover{
-    background: var(--background-nav);
-}
-
-
-main{
-flex-grow: 1;
-display: flex;
-justify-content: center;
-background:url("img/background.jpg") center / cover , linear-gradient(var(--background-footer) 15%,var(--background-nav),var(--background-footer));
-background-blend-mode: luminosity;
-}
-
-.grid{ 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
-    justify-content: center;
+   /*-------------------------------*/
    
-}
-.grid a {
- display: flex;     
-height: 200px;  
-width: 200px;
-background-repeat:no-repeat;
-background-size: cover;
-background-position:center;
-border-radius: 180px;
-margin: 25px;
+   html{
+       height:100%;
+       background-color: black;
+      
+   }
+   body{
+       min-height: 100%;
+       box-sizing: border-box;
+        display:flex;
+        flex-direction: column;
+       align-content:space-between;
+   }
+   
+   body h1{
+       font-weight: 300;
+       font-size: 16px;
+       line-height: 24px;
+       color: var(--text-color);
+   }
+   
+   
+   .encabezado nav{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center; 
+   transition-duration: .35s;
+   
+   }
+   .encabezado{
+   background: linear-gradient(var(--background-nav), var(--background-footer));
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+   border-radius: 0px 0px 10px 10px;
+   
+   }
+   
+   .profile{
+   height: 100px;  
+   width: 100px;
+   background-repeat:no-repeat;
+   background-size: cover;
+   background-position:center;
+   border-radius: 180px;
+   margin: 10px;
+   
+   
+   }
 
-} 
-
-.grid div{
-    display: flex;
-    width: 100%;
+.responsiveNav{
+    display: none;
 }
-footer{
-   background-color: var(--background-footer);
-}
-footer section{
+   
+   .navButton{
+       display: flex;
+       height: 80%;
+       width: 100px;
+       margin: 0px 5px 0px 25px;
+       justify-content: center;
+       align-items: center;
+       background: linear-gradient(var(--background-nav), var(--background-footer));
+       border-radius: 5px;
+ 
     
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;    
-}
 
-.media a{
+   }
+  
+   
+   nav div:hover{ 
+         background: var(--background-nav);
+   }
+   
+   
+   main{
+   flex-grow: 1;
+   display: flex;
+   justify-content: center;
+   background:url("img/background.jpg") center / cover , linear-gradient(var(--background-footer) 15%,var(--background-nav),var(--background-footer));
+   background-blend-mode: luminosity;
+   }
+   
+   .grid{ 
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       padding: 10px;
+       justify-content: center;
+      
+   }
+   .grid a {
     display: flex;     
-    height: 50px;  
-    width: 50px;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position:center;
-    border-radius: 180px;
-    margin: 5px;
-}
-.media{
-    width: 100%;
-}
-footer p{
+   height: 200px;  
+   width: 200px;
+   background-repeat:no-repeat;
+   background-size: cover;
+   background-position:center;
+   border-radius: 180px;
+   margin: 25px;
+   
+   } 
+   /*-----------animacion spin grids ---------------*/
+   .grid a:hover{
+    -webkit-animation:spin 1.3s linear infinite;
+    -moz-animation:spin 1.3s linear infinite;
+    animation:spin 1.3s linear infinite;
+   }
+
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+    /*-----------animacion spin end  ---------------*/
+   
+   .grid div{
+       display: flex;
+       width: 100%;
+   }
+   footer{
+      background-color: var(--background-footer);
+   }
+   footer section{
+       
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;    
+   }
+   
+   .media a{
+       display: flex;     
+       height: 50px;  
+       width: 50px;
+       background-repeat:no-repeat;
+       background-size: cover;
+       background-position:center;
+       border-radius: 180px;
+       margin: 5px;
+   }
+
+      /*-----------animacion spin media ---------------*/
+      .media a:hover{
+        -webkit-animation:spinY 1.8s linear infinite;
+        -moz-animation:spinY 1.8s linear infinite;
+        animation:spinY 1.8s linear infinite;
+       }
     
-    text-align: center;
-    padding: 15px;
-    color: gray;
-}
-@media only screen and (max-width: 500px){
+        @-moz-keyframes spinY { 100% { -moz-transform: rotateY(360deg); } }
+        @-webkit-keyframes spinY { 100% { -webkit-transform: rotateY(360deg); } }
+        @keyframes spinY { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+    
+        /*-----------animacion spin end  ---------------*/
+       
+
+
+   .media{
+       width: 100%;
+   }
+
+   
+   footer p{
+       
+       text-align: center;
+       padding: 15px;
+       color: gray;
+   }
+   /* ----------------------HAMBURGER-----------------------*/
+   .responsiveNav{
+     
+       flex-direction: column;
+       align-items: center;
+   }
+   .hamburguer{
+
+    width: 40px;
+    height: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px; 
+    background: linear-gradient(var(--responsive-color), white) ;
+    border-radius: 15px;
+    webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+    
+   }
+   .responsiveNav:hover .hamburguer{
+        background: var(--responsive-color);  
+   }
+
+
+   .showNavBurger{
+    z-index: 100;
+    position: fixed;
+    left: 12em;
+    /* top: 1.25em; */
+    top: .6em;
+   }
+
+    .crossburger1{
+        -webkit-transform: translateY(10px) rotate(45deg);
+        -ms-transform: translateY(10px) rotate(45deg);
+        -o-transform: translateY(10px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
+    }
+    .crossburger2{
+        opacity: 0;
+    }
+    .crossburger3{
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        -ms-transform: translateY(-10px) rotate(-45deg);
+        -o-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* ----------------HAMBURGER END YUM YUM------------------*/
+
+   /* -------------------------- navegador vertical ---------------------*/
+   .navegador2{ 
+    z-index: 20;
+    top: 0;   
+    left: -16em ;
+    background:  linear-gradient( to left ,var(--background-nav), var(--background-footer)90%)  ;
+    display: none;
+    width: 16em;
+    height: 100%;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 50px;
+    align-self: flex-end;
+     
+
+   }
+   .navButton2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--background-nav), var(--background-footer));
+    width: 16em;
+    height: 80px; 
+    margin: 15px 0px 15px 0px;
+
+   }
+
+   .navButton2 h1{
+       font-size: 30px ;
+   }
+
+   .navegador2 div:hover{ 
+    /* background: var(--background-nav); */
+    box-shadow: 16em 0 rgba(255,255,255,0.1) inset;
+    }
+    .showNav{
+      
+        left: 0;
+    }
+
+   /* -------------------------- navegador vertical END ---------------------*/
+
+   @media only screen and (max-width: 980px){
     .grid a{
-        height: 130px;  
-        width: 130px;
+        height: 150px;  
+        width: 150px;
+       
     }
 
     .profile{
-        height: 70px;  
-        width: 70px;
+        height: 80px;  
+        width: 80px;
     }
     .grid div{
         width: 0;
     }
-    body h1{
-        font-size: 10px;
+
+}
+
+@media only screen and (max-width: 507px){
+    .encabezado nav{
+        justify-content: flex-start;
+    }
+    .encabezado{
+        justify-content: space-around;
+        }
+
+    .grid a{
+        height: 100px;  
+        width: 100px;
+        margin: 25px;
     }
 
-}
+    .profile{
+        height: 80px;  
+        width: 80px;
+        margin-left: -25px;
+    }
 
-.hide{
-	display: none;
-}
+      .responsiveNav{
+           display: flex;
+           height: 50px;
+           width: 50px;
+           background-repeat:no-repeat;
+           background-size: cover;
+           background-position:center;
+           align-self: center;
+           justify-content: center;
+           color: var(--responsive-color);
+           margin-right: -25px;
+       }
+
+         .navegador2{
+          display: flex ;
+       }
+
+
+    }
+ 
+
+
+   @media only screen and (max-width: 350px){
+       .grid a{
+           height: 70px;  
+           width: 70px;
+           margin: 10px;
+       }
+   
+       .profile{
+           height: 60px;  
+           width: 60px;
+       }
+    
+   } 
+
+    
+   .hide{
+       display: none;
+   }
