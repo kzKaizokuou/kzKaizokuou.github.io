@@ -357,7 +357,7 @@
     .profile{
         height: 80px;  
         width: 80px;
-        margin-left: -25px;
+        margin-left: -80px;
     }
 
       .responsiveNav{
@@ -370,7 +370,7 @@
            align-self: center;
            justify-content: center;
            color: var(--responsive-color);
-           margin-right: -25px;
+           margin-right: -80px;
            left: 10px;
        }
 
