@@ -4,6 +4,8 @@
     --background-nav: #004d80;
     --background-footer: black;
     --text-color:#009ae4;
+    --text-colorH1: #ff6600;
+    --text-colorH2:  #e62e00;
     --responsive-color: #d9d9d9;
    }
    
@@ -22,13 +24,29 @@
        align-content:space-between;
    }
    
-   body h1{
+   header h1{
        font-weight: 300;
        font-size: 16px;
        line-height: 24px;
        color: var(--text-color);
    }
    
+   main h1 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--text-colorH1);
+   }
+
+   main h2{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-colorH2);
+   }
+   main p{
+    color: #b3b3b3;
+   }
    
    .encabezado nav{
    display: flex;
@@ -90,6 +108,7 @@
    justify-content: center;
    background:url("img/background.jpg") center / cover , linear-gradient(var(--background-footer) 15%,var(--background-nav),var(--background-footer));
    background-blend-mode: luminosity;
+   flex-direction: column;
    }
    
    .grid{ 
@@ -98,7 +117,6 @@
        align-items: center;
        padding: 10px;
        justify-content: center;
-      
    }
    .grid a {
     display: flex;     
@@ -128,6 +146,43 @@
        display: flex;
        width: 100%;
    }
+
+   /* secciones plus */
+
+   .CV{
+       /* background: #d9d9d9; */
+       margin: auto;
+       max-width: 70%;
+       width: 500px;
+  
+   }
+   .CV div{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: justify;
+    
+   }
+   .CV>div>p{
+       flex-wrap: wrap;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* secciones plus END */
+
    footer{
       background-color: var(--background-footer);
    }
@@ -316,6 +371,7 @@
            justify-content: center;
            color: var(--responsive-color);
            margin-right: -25px;
+           left: 10px;
        }
 
          .navegador2{
