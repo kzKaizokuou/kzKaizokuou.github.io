@@ -54,13 +54,14 @@
    align-items: center;
    justify-content: center; 
    transition-duration: .35s;
+   margin-right: 40px;
    
    }
    .encabezado{
    background: linear-gradient(var(--background-nav), var(--background-footer));
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-between;
    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
    border-radius: 0px 0px 10px 10px;
    
@@ -74,6 +75,7 @@
    background-position:center;
    border-radius: 180px;
    margin: 10px;
+   margin-left: 30px;
    
    
    }
@@ -259,8 +261,7 @@
     z-index: 100;
     position: fixed;
     left: 12em;
-    /* top: 1.25em; */
-    top: .6em;
+    top: .05em;
    }
 
     .crossburger1{
@@ -304,7 +305,7 @@
     background: linear-gradient(var(--background-nav), var(--background-footer));
     width: 16em;
     height: 80px; 
-    margin: 15px 0px 15px 0px;
+    margin: 0px 0px 0px 0px;
 
    }
 
