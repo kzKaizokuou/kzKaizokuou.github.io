@@ -81,7 +81,7 @@ let line3 = document.getElementById("line3")
 ////////////////// display responsive //////////////// 
 window.addEventListener("load",function(){
     let screen = window.innerWidth;     
-   
+
  
  if(screen <= 507 ){
   navegador.classList.remove("navegador1")
