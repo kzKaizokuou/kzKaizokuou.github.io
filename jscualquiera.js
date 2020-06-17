@@ -71,7 +71,7 @@ function downloadContent(name, content) {
 
 let catalogo = seccionesMain[1]
 var xhr = new XMLHttpRequest()
-xhr.open("GET","https://kzkaizokuou.github.io/products.json")
+xhr.open("GET","products.json")
 xhr.addEventListener("load",function(){
   if (xhr.status == 200) {
     let lista = JSON.parse(xhr.responseText)
