@@ -79,7 +79,7 @@ xhr.addEventListener("load",function(){
 
       let id = lista[i].id
       let name = lista[i].name
-      let photo = "catalogo/" + id + ".PNG"
+      let photo = "catalogo/catalogo/" + id + ".PNG"
       let description = lista[i].description
 
       let div = document.createElement("div")
